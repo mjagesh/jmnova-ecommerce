@@ -1,0 +1,244 @@
+/* =========================================
+   Order Success Page
+========================================= */
+
+.order-success-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px 80px;
+  background: #f8fafc;
+}
+
+/* =========================================
+   Success Card
+========================================= */
+
+.order-success-card {
+  width: 100%;
+  max-width: 620px;
+  padding: 52px 48px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 15px 45px rgba(17, 24, 39, 0.08);
+}
+
+/* =========================================
+   Success Icon
+========================================= */
+
+.order-success-icon {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecfdf3;
+  border: 8px solid #f0fdf4;
+  color: #15803d;
+  font-size: 38px;
+  font-weight: 800;
+}
+
+/* =========================================
+   Label
+========================================= */
+
+.order-success-label {
+  margin: 0 0 10px;
+  color: #15803d;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+/* =========================================
+   Heading
+========================================= */
+
+.order-success-card h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* =========================================
+   Message
+========================================= */
+
+.order-success-message {
+  max-width: 470px;
+  margin: 14px auto 28px;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   Order ID
+========================================= */
+
+.order-success-id {
+  max-width: 440px;
+  margin: 0 auto 28px;
+  padding: 16px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #f9fafb;
+  text-align: left;
+}
+
+.order-success-id span {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.order-success-id strong {
+  color: #111827;
+  font-size: 13px;
+  font-weight: 700;
+  word-break: break-all;
+}
+
+/* =========================================
+   Information
+========================================= */
+
+.order-success-info {
+  max-width: 440px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #eef0f2;
+  border-radius: 14px;
+  background: #fafafa;
+}
+
+.order-success-info-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.order-success-info-item + .order-success-info-item {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.info-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.order-success-info-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.order-success-info-item p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   Button
+========================================= */
+
+.order-success-button {
+  width: 100%;
+  max-width: 440px;
+  min-height: 50px;
+  padding: 13px 20px;
+  border: 1px solid #111827;
+  border-radius: 10px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
+}
+
+.order-success-button:hover {
+  background: #000000;
+}
+
+.order-success-button:active {
+  transform: translateY(1px);
+}
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 640px) {
+  .order-success-page {
+    min-height: calc(100vh - 70px);
+    padding: 40px 16px 60px;
+  }
+
+  .order-success-card {
+    padding: 42px 22px;
+    border-radius: 18px;
+  }
+
+  .order-success-icon {
+    width: 72px;
+    height: 72px;
+    font-size: 32px;
+  }
+
+  .order-success-card h1 {
+    font-size: 27px;
+  }
+
+  .order-success-message {
+    font-size: 14px;
+  }
+
+  .order-success-id {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .order-success-card {
+    padding: 36px 18px;
+  }
+
+  .order-success-card h1 {
+    font-size: 24px;
+  }
+}

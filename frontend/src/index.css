@@ -1,0 +1,190 @@
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #111827;
+  background: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   Global Reset
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #ffffff;
+  color: #111827;
+}
+
+/* =========================
+   Root
+========================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   Typography
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111827;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* =========================
+   Links
+========================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   Images
+========================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   Forms
+========================= */
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+/* =========================
+   Accessibility
+========================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
+
+/* =========================
+   Selection
+========================= */
+
+::selection {
+  background: #111827;
+  color: #ffffff;
+}
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* =========================
+   Utility
+========================= */
+
+.container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* =========================
+   Responsive Container
+========================= */
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 28px, 1200px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 20px, 1200px);
+  }
+}
